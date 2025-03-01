@@ -122,3 +122,57 @@ namespace Result
         }
     }
 }
+
+
+
+✅  // Small Calculator  📌
+
+using System;
+using System.Security;
+
+namespace Result
+{
+   public class Class_01
+    {
+        public static void Main(string[] args)
+        {
+            char operation;
+            int num1, num2;
+
+            Console.Write("Input number 1 : ");
+            num1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Input number 2 : ");
+            num2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Enter an Operator ( + , - , * , / ):");
+            operation = Convert.ToChar(Console.ReadLine());
+
+            switch (operation)
+            {
+                case '+':
+                    Console.WriteLine("Answer is : " + (num1 + num2));
+                    break;
+                case '-':
+                    Console.WriteLine("Answer is : " + (num1 - num2));
+                    break;
+                case '*':
+                    Console.WriteLine("Answer is : " + (num1 * num2));
+                    break;
+                case '/':
+                    if(num2 != 0)
+                    {
+                        Console.WriteLine("Answer is : " + (num1 / num2));
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error !");
+
+                    }
+                    break;
+
+            }
+        }
+    }
+}
