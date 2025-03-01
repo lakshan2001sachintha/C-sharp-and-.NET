@@ -125,7 +125,7 @@ namespace Result
 
 
 
-✅  // Small Calculator  📌
+✅  // Calculator with C# ( using two numbers ) 📌
 
 using System;
 using System.Security;
