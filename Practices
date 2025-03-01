@@ -1,4 +1,7 @@
-// First Code in C#
+
+✅   // First Code in C#  📌
+
+
 using System;
 
 namespace Result
@@ -30,6 +33,91 @@ namespace Result
             Console.WriteLine("Your weight : "+weight);
 
             // This is the first C# Code 
+
+        }
+    }
+}
+
+
+
+
+✅  // Second Exercise 📌
+
+
+
+
+using System;
+
+namespace Result
+{
+    public class Class_01
+    {
+        public static void Main(string[] args)
+        {
+            int ID;
+            string name;
+            double M_marks;
+            double S_marks;
+            double E_marks;
+            string div;
+
+            // get user ID
+
+            Console.Write("Enter Your ID : ");
+            ID = Convert.ToInt32(Console.ReadLine());
+
+            // get user name
+
+            Console.Write("Enter Your Name : ");
+            name = Console.ReadLine();
+
+          
+            // get maths marks
+
+            Console.Write("Enter Maths Marks : ");
+            M_marks = Convert.ToDouble(Console.ReadLine());
+
+         
+            // get science marks
+
+            Console.Write("Enter Science Marks : ");
+            S_marks = Convert.ToDouble(Console.ReadLine());
+
+
+            // get english marks
+
+            Console.Write("Enter English Marks : ");
+            E_marks = Convert.ToDouble(Console.ReadLine());
+
+            // calculate
+
+
+            double full_marks = M_marks + S_marks + E_marks;
+            double percentage = full_marks / 3.0;
+
+            if (percentage<=100 && percentage>=80)
+            {
+                div = "Very Good Pass";
+
+            }else if (60<= percentage && percentage<80)
+            {
+                div = "Good pass";          
+            }
+            else if (60>percentage && 45<=percentage)
+            {
+                div = "Pass";
+            }
+            else
+            {
+                div = "Fail";
+            }
+
+            // output
+
+            Console.WriteLine("\n Student ID: {0} \n Student Name : {1} \n", ID, name);
+            Console.WriteLine("Marks in Maths : {0} \n Marks in Science : {1} \n Marks in English : {2}",M_marks,S_marks,E_marks);
+            Console.WriteLine("Total Matks : {0} \n Percentage : {1} \n Grade : {2} \n", full_marks, percentage, div);
+            
 
         }
     }
